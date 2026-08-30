@@ -1,0 +1,79 @@
+**Official website / prices:** https://www.campingolivella.it/ · https://campingolivella.it/prezzi-pricing.html  
+**2026 season:** 20 March–25 October
+
+Olivella sits directly on the lake in the same Via Cave cluster as Lagovivo, Camping Pilzone and Camping Cave. Its official site describes **large shaded pitches for caravans and campers**, shallow lake water, wastewater disposal and a boat ramp. It also explicitly states that it has an arrangement with **Lago Vivo Green Rental** “a due passi dal campeggio” — effectively a short walk away. The page specifically mentions kayaks/electric boats, while Lagovivo's own current operation separately confirms SUP rental, so the SUP advantage is the same nearby dedicated operator used by Pilzone/Cave rather than a campsite-owned fleet.
+
+The price is unusually attractive for 2 September. The official 2026 table places 2 September in peak season. **Zone A** is clear at €17 for the pitch plus €9 per adult, with €1 tourist tax per adult: about **€37/night for two adults**. The site's Italian and English columns conflict slightly for **Zone B** (adult/pitch figures differ by €1), so the honest comparison is **about €47–50/night including tourist tax** rather than pretending there is one exact number. Electricity, showers, hot water and private parking are included in the pitch tariff.
+
+There is one material downside for a rental camper: a current June/July 2026 camper review specifically describes **tight access and cramped manoeuvring**, especially for larger motorhomes; another current review describes the site as quiet, shaded and clean. For a medium camper, ask for the exact access route and pitch dimensions before booking.
+
+**Best for:** low price, direct lake access, Lagovivo proximity, people happy with a small traditional campsite.  
+**Downside:** access/manoeuvring can be awkward; facilities/reviews are more mixed than Pilzone; direct SUP rental is nearby rather than owned by Olivella.
+
+---
+
+## 13. Belvedere Clusane — attractive location, but verify transient touring pitches first
+
+**Location:** Via Risorgimento 132–134, Clusane d’Iseo  
+**Official website:** https://www.belvedereclusane.it/
+
+Belvedere is worth retaining in the guide because its own current site says it is **directly on Lake Iseo** and offers **pitches and stopover areas**, plus a 25 m lakeside pool, bar and restaurant/pizzeria. That makes the location worth retaining as a conditional option.
+
+Current sources conflict on Belvedere's transient touring capacity. PiNCAMP currently reports **0 tourist pitches** and no complete motorhome service station, while Belvedere's own site advertises “piazzole ed aree di sosta”. This may reflect permanent/seasonal-pitch classification or stale third-party data, so transient camper availability should be confirmed directly before relying on the site.
+
+The SUP case is weaker than at the ranked rental-focused sites. Direct shoreline access would be useful **if you already had a board**, but I found no verified on-site SUP rental at Belvedere. Whassup operates in Predore on the southwestern shore, but this should be treated as a separate rental trip rather than assumed to be a two-minute walk from the campsite.
+
+**For this trip:** phone **+39 030 9898030** and ask specifically whether they accept a transient medium camper for your dates, what pitch/service facilities are included, and whether a nearby board rental can be recommended. Until they answer yes, do not use Belvedere as a primary fallback.
+
+---
+
+# SUP planning on Lake Iseo
+
+## SUP rental reliability matrix
+
+Because you are **not bringing boards**, this is more useful than a simple yes/no rental column. “Fleet” means what can actually be verified publicly; an unknown count should not be interpreted as a large supply.
+
+| Base / campsite | SUP access | Publicly known fleet | Advance booking evidence | Reliability for this trip |
+|---|---|---|---|---|
+| **Camping Pilzone / Camping Cave / Camping Olivella → Lagovivo** | Dedicated rental at Via Cave 1 | Official count not published; Aug 2026 reviewer rented **4 touring SUPs at once** and reported good quantity/range | **Phone reservations appreciated** | **Very good**; Olivella has a separate camper-access caveat |
+| **Camping Eurovil** | **On-site SUP rental** + Whassup elsewhere in Predore as a second rental channel | Campsite fleet count not published; Whassup fleet count also not published | Whassup offers online/advance booking; campsite rule not published | **Very good** because there are two independent rental options in Predore |
+| **Camping Eden → Surface SUP Academy / X Beach + RentalKles** | Dedicated Surface base on Via Piangrande plus a second Pisogne SUP rental business at RentalKles | Surface has multiple board categories; RentalKles publishes SUP rental from €5/hour | Both operators publish contact/booking channels | **Excellent redundancy** for a northern base |
+| **Camping del Sole** | Directly on-site | Count not published | Contact on-site rental ahead; no SUP-specific reservation rule published | **Good–very good** |
+| **Camping Quai** | Directly on-site | Count not published | **Reserve at least 1 day ahead** at reception | **Very good** |
+| **Sassabanek / Sporting Lido** | Directly within complex | Count not published | No clear reservation rule found | **Good**, and Lido open through 6 Sep |
+| **Punta d’Oro** | Directly on-site | **2 SUPs** + 3 kayaks | No formal SUP reservation policy found; call ahead | **Convenient but fragile** |
+| **Riva di San Pietro → Surface SUP Academy** | A few doors away in Marone | Multiple board categories; count not published | Contact available; guided activities are reservation-based | **Very good** |
+| **Covelo** | No verified on-site SUP | **Il Lido di Iseo** rents SUPs to non-lido guests by reservation; otherwise use Pilzone operators | Il Lido requires reservation/payment but no lido admission | **Moderate–good**, but involves leaving the campsite |
+| **Camping Iseo** | No verified on-site SUP | **Il Lido di Iseo** is a genuine public rental fallback and explicitly accepts SUP renters who are not lido guests | Reservation required | **Good fallback**, though not on-site |
+| **Belvedere Clusane** | No verified on-site SUP | Separate rental trip required; do not assume Whassup is walkable | — | **Low–moderate**, and transient pitch status must first be confirmed |
+
+### Published rental prices worth knowing
+
+- **Camping Quai:** SUP/single kayak €10/1h · €18/2h · €25/3h · €32/4h · €37/day. Reserve at least one day ahead at reception.
+- **Lagovivo:** rentals from **€12**; phone reservations are welcomed; buoyancy aid, dry bag and phone case are supplied, and the operator advertises an emergency boat.
+- **Surface SUP Academy (Marone + X Beach Pisogne):** All-Round SUP €12.50/1h · €22/2h · €33/3h · €40/4h · €65/day, plus €3.50 Guest membership for the 2026 season.
+- **RentalKles, Pisogne:** SUP €5/1h · €15/half-day · €20/day, giving Pisogne a second independent rental option.
+- **Canottieri Sebino, Lovere:** SUP €12/1h · €20/2h · €6 per additional half-hour; buoyancy aid included.
+- **Il Lido di Iseo:** SUP/canoe rental is available by reservation even to people who do **not** buy lido admission; ask for the current hourly rate.
+- **Whassup Rental, Predore:** €15/1h · €20/1.5h · €25/2h · €40/half-day · €50/full day; board, paddle, leash, waterproof bag and life jacket included.
+- **Punta d’Oro / del Sole / Sassabanek:** rental is verified, but a current public SUP price/fleet count was not found; ask before relying on it.
+
+## Monte Isola: possible, but not a casual default crossing
+
+Monte Isola is about **4.5 km²**. It is the **largest lake island in Italy** and is commonly described as the largest in Southern/Central Europe, but it is **not the largest inhabited lake island in Europe**: for example, inhabited Visingsö in Sweden's Lake Vättern is about 25 km². Some Lake Iseo tourism material still uses the broader “largest inhabited in Europe” claim; this guide does not.
+
+Lagovivo and the Lombardy tourism portal do advertise paddling from Pilzone toward Monte Isola, and Lagovivo says it advises customers on routes according to ability and provides safety equipment. That makes the crossing a legitimate operator-advised option in suitable conditions, not a casual default trip.
+
+The main safety issue is ferry traffic. Monte Isola has frequent scheduled ferry traffic. The official tourism portal describes the Sulzano–Peschiera Maraglio and Sale Marasino–Carzano services as running roughly every **15–20 minutes**, and the lake's nautical map shows dense navigation around the island. A rented SUP crossing should therefore be treated as an **operator-advised open-water outing**, not something to improvise merely because the island looks close.
+
+For this trip:
+
+- **Do not casually launch across the Sulzano–Peschiera ferry corridor.** If you want to cross, ask the rental operator which route is appropriate that morning and follow its briefing.
+- Use the supplied **buoyancy aid**, a leash where appropriate, waterproof phone storage, and stay well clear of ferry approaches and docks.
+- If you are inexperienced, conditions are marginal, or the operator advises against the crossing, choose a **shoreline paddle** or a **guided SUP outing** instead.
+- No reliable source checked establishes unusually strong channel currents as a general Lake Iseo rule, and no source checked says SUP crossings to Monte Isola are generally prohibited.
+- Visit Monte Isola itself by **ferry** regardless; paddling and sightseeing on the island are separate activities.
+
+## Wind pattern: morning bias, not a rigid clock rule
+
+Official Lake Iseo material describes two characteristic thermal winds: the **Vèt**, primarily a night/early-morning northerly, and the **Ora**, a southerly that develops from **late morning into the afternoon/evening**. A local Lake Iseo source puts the Ora at roughly **11:00 onward**, but the exact onset varies with sunshine, season and weather.
