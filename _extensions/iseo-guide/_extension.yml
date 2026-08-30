@@ -1,0 +1,24 @@
+title: Lake Iseo Guide
+author: flofrie
+version: 0.1.0
+quarto-required: ">=1.10.0"
+contributes:
+  formats:
+    typst:
+      papersize: a4
+      margin:
+        left: 17mm
+        right: 17mm
+        top: 18mm
+        bottom: 18mm
+      fontsize: 9.5pt
+      linestretch: 1.12
+      linkcolor: "0b7285"
+      toc: true
+      toc-depth: 2
+      page-numbering: "1"
+      keep-typ: true
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
+        - page.typ
