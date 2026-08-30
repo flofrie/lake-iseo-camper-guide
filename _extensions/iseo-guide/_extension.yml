@@ -20,5 +20,4 @@ contributes:
       keep-typ: true
       template-partials:
         - typst-template.typ
-        - typst-show.typ
         - page.typ
