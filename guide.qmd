@@ -1,0 +1,51 @@
+---
+title: "Lake Iseo"
+subtitle: "Camper Van & SUP Camping Guide"
+date: "2026-08-26"
+date-format: "D MMMM YYYY"
+lang: en
+toc: true
+toc-depth: 2
+format:
+  html:
+    output-file: index.html
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    toc-location: right
+    anchor-sections: true
+    smooth-scroll: true
+    title-block-banner: true
+    link-external-newwindow: true
+  iseo-guide-typst:
+    output-file: lake-iseo-camper-guide.pdf
+    toc: true
+    toc-depth: 2
+    keep-typ: true
+    page-numbering: "1"
+---
+
+::: {.content-visible when-format="html"}
+[Download the PDF edition](lake-iseo-camper-guide.pdf){.btn .btn-primary .btn-lg}
+:::
+
+{{< include content/01.qmd >}}
+
+{{< include content/02.qmd >}}
+
+{{< include content/03.qmd >}}
+
+{{< include content/04.qmd >}}
+
+{{< include content/05.qmd >}}
+
+{{< include content/06.qmd >}}
+
+{{< include content/07.qmd >}}
+
+{{< include content/08.qmd >}}
+
+{{< include content/09.qmd >}}
+
+{{< include content/10.qmd >}}
