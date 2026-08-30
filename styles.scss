@@ -1,0 +1,138 @@
+/*-- scss:defaults --*/
+$primary: #0b7285;
+$secondary: #d48b3f;
+$body-bg: #f7f8f6;
+$body-color: #263238;
+$link-color: #087f8c;
+$headings-color: #0b5963;
+$font-family-sans-serif: "Inter", "Aptos", "Segoe UI", system-ui, -apple-system, sans-serif;
+$headings-font-family: "Aptos Display", "Segoe UI", system-ui, sans-serif;
+
+/*-- scss:rules --*/
+:root {
+  --iseo-lake: #0b7285;
+  --iseo-deep: #084c57;
+  --iseo-sky: #dff3f4;
+  --iseo-sand: #f4ead8;
+  --iseo-sun: #d48b3f;
+  --iseo-ink: #263238;
+}
+
+body {
+  background:
+    radial-gradient(circle at 15% 0%, rgba(11,114,133,.08), transparent 28rem),
+    #f7f8f6;
+}
+
+#quarto-content {
+  max-width: 1500px;
+  margin-inline: auto;
+}
+
+main.content {
+  background: rgba(255,255,255,.94);
+  border: 1px solid rgba(8,76,87,.08);
+  border-radius: 18px;
+  box-shadow: 0 16px 48px rgba(38,50,56,.08);
+  padding: clamp(1.2rem, 2vw, 2.4rem);
+}
+
+.quarto-title-banner {
+  background:
+    linear-gradient(125deg, rgba(8,76,87,.98), rgba(11,114,133,.9)),
+    var(--iseo-lake);
+  color: white;
+  min-height: 17rem;
+  display: flex;
+  align-items: end;
+}
+
+.quarto-title-banner .title,
+.quarto-title-banner .subtitle,
+.quarto-title-banner .quarto-title-meta {
+  color: white !important;
+}
+
+.quarto-title-banner .title {
+  font-size: clamp(2.6rem, 6vw, 5.2rem);
+  letter-spacing: -.04em;
+  max-width: 11ch;
+  line-height: .95;
+}
+
+.quarto-title-banner .subtitle {
+  font-size: clamp(1.2rem, 2.4vw, 1.9rem);
+  opacity: .9;
+}
+
+h1 {
+  margin-top: 3rem;
+  padding-top: .5rem;
+  border-top: 5px solid var(--iseo-lake);
+  letter-spacing: -.025em;
+}
+
+h2 {
+  color: var(--iseo-lake);
+  margin-top: 2.2rem;
+}
+
+h3 {
+  color: var(--iseo-deep);
+}
+
+blockquote {
+  border-left: 5px solid var(--iseo-sun);
+  background: linear-gradient(90deg, var(--iseo-sand), #fff);
+  border-radius: 0 12px 12px 0;
+  padding: 1rem 1.25rem;
+  color: #37474f;
+}
+
+table {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(38,50,56,.06);
+}
+
+thead {
+  background: var(--iseo-deep);
+  color: white;
+}
+
+.table > :not(caption) > * > * {
+  padding: .68rem .72rem;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background: #f4f9f9;
+}
+
+a {
+  text-underline-offset: .15em;
+}
+
+.btn-primary {
+  border: 0;
+  box-shadow: 0 8px 22px rgba(11,114,133,.2);
+}
+
+#TOC {
+  border-left: 2px solid rgba(11,114,133,.2);
+  padding-left: 1rem;
+}
+
+#TOC .active {
+  color: var(--iseo-lake) !important;
+  font-weight: 700;
+}
+
+@media (min-width: 1000px) {
+  main.content p { line-height: 1.72; }
+}
+
+@media print {
+  main.content { box-shadow: none; border: 0; }
+}
