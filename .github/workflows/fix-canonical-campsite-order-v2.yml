@@ -1,0 +1,134 @@
+name: Fix canonical campsite order v2
+
+on:
+  push:
+    branches: [main]
+    paths: [.canonical-order-v2-trigger]
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Canonicalize all campsite listings
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          ORDERED = [
+              "Pilzone", "Cave", "Riva di San Pietro", "Quai", "Eurovil",
+              "del Sole", "Eden", "Punta d’Oro", "Covelo", "Camping Iseo",
+              "Sassabanek", "Olivella", "Belvedere Clusane",
+          ]
+          ORDER = {x:i for i,x in enumerate(ORDERED)}
+
+          def read(p): return Path(p).read_text(encoding="utf-8")
+          def write(p,s): Path(p).write_text(s.rstrip()+"\n",encoding="utf-8")
+
+          def camp(label):
+              low=re.sub(r"[*_`]","",label).strip().lower()
+              tests=[
+                  ("Olivella","olivella"),("Belvedere Clusane","belvedere"),
+                  ("Riva di San Pietro","san pietro"),("del Sole","del sole"),
+                  ("Punta d’Oro","punta d’oro"),("Punta d’Oro","punta d'oro"),
+                  ("Camping Iseo","camping iseo"),("Sassabanek","sassabanek"),
+                  ("Eurovil","eurovil"),("Covelo","covelo"),("Quai","quai"),
+                  ("Cave","cave"),("Eden","eden"),("Pilzone","pilzone"),
+              ]
+              for name,needle in tests:
+                  if needle in low:return name
+              raise ValueError(label)
+          def key(label): return ORDER[camp(label)]
+
+          def numbered_label(line):
+              m=re.match(r"^\d+\. \*\*(.+?)\*\*",line)
+              if not m:raise ValueError(line)
+              return m.group(1)
+          def first_cell(row): return row.split("|")[1].strip()
+          def second_cell(row): return row.split("|")[2].strip()
+
+          # Best-fit list and price table.
+          p=read("content/01.qmd")
+          s=p.index("### Best fit for this trip"); a=p.index("\n1. ",s)+1; b=p.index("\n\n**Belvedere Clusane**",a)
+          items=p[a:b].splitlines(); items.sort(key=lambda x:key(numbered_label(x)))
+          items=[re.sub(r"^\d+\.",f"{i}.",x,1) for i,x in enumerate(items,1)]
+          p=p[:a]+"\n".join(items)+p[b:]
+          h="| Campsite | Availability for arrival 2 Sep | Approx. price for 2 adults + camper on 2 Sep | What the current booking information means |"
+          s=p.index(h);a=p.index("\n| **",s)+1;b=p.index("\n\n**Belvedere Clusane",a)
+          rows=p[a:b].splitlines();rows.sort(key=lambda x:key(first_cell(x)));p=p[:a]+"\n".join(rows)+p[b:]
+          write("content/01.qmd",p)
+
+          # Quick recommendations and profile corpus.
+          paths=[f"content/{i:02d}.qmd" for i in range(2,7)]
+          combined="\n".join(read(x).rstrip() for x in paths)+"\n"
+          qh="| Best for | Campsite | Why |";s=combined.index(qh);a=combined.index("\n| **",s)+1;b=combined.index("\n\n# Campsite profiles",a)
+          qrows=combined[a:b].splitlines();qrows.sort(key=lambda x:key(second_cell(x)));combined=combined[:a]+"\n".join(qrows)+combined[b:]
+
+          ph=combined.index("# Campsite profiles")
+          m=re.search(r"(?m)^## \d+\. ",combined[ph:]);first=ph+m.start()
+          marker="\n---\n\n# SUP planning on Lake Iseo";tail_at=combined.index(marker,first)
+          prefix=combined[:ph];intro=combined[ph:first];blob=combined[first:tail_at]
+
+          # A profile is defined by its numbered H2 heading, not by horizontal rules;
+          # some source-file boundaries previously had no horizontal rule.
+          starts=[m.start() for m in re.finditer(r"(?m)^## \d+\. ",blob)]
+          if len(starts)!=13:raise SystemExit(f"Expected 13 profile headings, found {len(starts)}")
+          starts.append(len(blob));blocks=[]
+          for i in range(13):
+              block=blob[starts[i]:starts[i+1]].strip()
+              block=re.sub(r"\n\n---\s*$","",block).rstrip()
+              blocks.append(block)
+          def heading_label(block):
+              line=block.splitlines()[0]
+              m=re.match(r"^## \d+\. (.+?)(?: —|$)",line)
+              if not m:raise ValueError(line)
+              return m.group(1)
+          blocks.sort(key=lambda x:key(heading_label(x)))
+          blocks=[re.sub(r"^## \d+\.",f"## {i}.",x,1) for i,x in enumerate(blocks,1)]
+          tail=combined[tail_at+len("\n---\n\n"):]
+          groups=[blocks[:2],blocks[2:5],blocks[5:8],blocks[8:11],blocks[11:]]
+          outs=[
+              prefix+intro+"\n\n---\n\n".join(groups[0]),
+              "\n\n---\n\n".join(groups[1]),
+              "\n\n---\n\n".join(groups[2]),
+              "\n\n---\n\n".join(groups[3]),
+              "\n\n---\n\n".join(groups[4])+"\n\n---\n\n"+tail,
+          ]
+          for path,text in zip(paths,outs):write(path,text)
+
+          # Official campsite table and campsite-specific rows in watersports table.
+          p=read("content/09.qmd")
+          h="| Campsite | Official website | Best reason to consider it for this trip |";s=p.index(h);a=p.index("\n| **",s)+1;b=p.index("\n\n# Deliberate exclusions",a)
+          rows=p[a:b].splitlines();rows.sort(key=lambda x:key(first_cell(x)));p=p[:a]+"\n".join(rows)+p[b:]
+          h="| Operator / resource | Location / relevance | Link |";s=p.index(h);a=p.index("\n| **",s)+1;b=p.index("\n\n# Official campsite websites",a)
+          rows=p[a:b].splitlines();camp_rows=[];other=[]
+          for row in rows:
+              try:camp_rows.append((key(first_cell(row)),row))
+              except ValueError:other.append(row)
+          camp_rows.sort(key=lambda x:x[0]);p=p[:a]+"\n".join(other+[r for _,r in camp_rows])+p[b:]
+          write("content/09.qmd",p)
+
+          # Strong guards for the three complete canonical presentations.
+          p=read("content/01.qmd");s=p.index("### Best fit for this trip");a=p.index("\n1. ",s)+1;b=p.index("\n\n**Belvedere Clusane**",a)
+          got=[camp(numbered_label(x)) for x in p[a:b].splitlines()]
+          if got!=ORDERED[:-1]:raise SystemExit(f"Best-fit order: {got}")
+          allp="\n".join(read(x) for x in paths)
+          got=[camp(x) for x in re.findall(r"(?m)^## \d+\. (.+?)(?: —|$)",allp)]
+          if got!=ORDERED:raise SystemExit(f"Profile order: {got}")
+          p=read("content/09.qmd");s=p.index("| Campsite | Official website | Best reason");a=p.index("\n| **",s)+1;b=p.index("\n\n# Deliberate exclusions",a)
+          got=[camp(first_cell(x)) for x in p[a:b].splitlines()]
+          if got!=ORDERED:raise SystemExit(f"Official table order: {got}")
+          PY
+      - name: Commit canonical order
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/*.qmd
+          git diff --cached --check
+          git commit -m "Enforce canonical campsite order"
+          git push origin HEAD:main
