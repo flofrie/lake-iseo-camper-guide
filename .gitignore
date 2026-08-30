@@ -1,0 +1,4 @@
+_output/
+.quarto/
+*.tmp
+.DS_Store
