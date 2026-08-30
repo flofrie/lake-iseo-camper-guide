@@ -1,8 +1,7 @@
 ---
 title: "Lake Iseo"
 subtitle: "Camper Van & SUP Camping Guide"
-date: "2026-08-26"
-date-format: "D MMMM YYYY"
+date: "30th of August 2026"
 lang: en
 toc: true
 toc-depth: 2

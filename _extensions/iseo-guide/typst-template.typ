@@ -69,8 +69,8 @@
     pagebreak(weak: true)
     block(
       width: 100%,
-      above: 0.2em,
-      below: 0.75em,
+      above: 0.5em,
+      below: 1.15em,
       inset: (top: 4pt, bottom: 5pt),
       stroke: (top: 3pt + lake),
     )[
@@ -80,15 +80,15 @@
 
   show heading.where(level: 2): it => block(
     width: 100%,
-    above: 1.1em,
-    below: 0.45em,
+    above: 2.4em,
+    below: 1.05em,
   )[
     #text(size: 12.5pt, weight: "bold", fill: lake)[#it.body]
   ]
 
   show heading.where(level: 3): it => block(
-    above: 0.8em,
-    below: 0.3em,
+    above: 1.6em,
+    below: 0.9em,
   )[
     #text(size: 10.5pt, weight: "bold", fill: deep)[#it.body]
   ]
@@ -140,7 +140,7 @@
       #grid(
         columns: (1fr, auto),
         align: (left, right),
-        [#text(size: 9.5pt)[Camper van · lakefront camping · SUP rental]],
+        [#text(size: 9.5pt)[Camper Van · Lakefront Camping · SUP Rental]],
         [#if date != none { text(size: 9.5pt, weight: "bold")[#date] }],
       )
     ]
