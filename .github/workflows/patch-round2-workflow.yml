@@ -1,0 +1,44 @@
+name: Patch round-two workflow
+
+on:
+  push:
+    branches: [main]
+    paths: [.patch-round2-workflow-trigger]
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch source-list boundary handling
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('.github/workflows/apply-round2-guide-revisions.yml')
+          s = p.read_text(encoding='utf-8')
+          s = s.replace(
+              'def stable_camp_sort_bullets(text, start_marker, end_marker):',
+              'def stable_camp_sort_bullets(text, start_marker, end_marker=None):',
+          )
+          s = s.replace(
+              '              e = text.index(end_marker, s)',
+              '              e = text.index(end_marker, s) if end_marker is not None else len(text)',
+          )
+          s = s.replace(
+              '          combo = stable_camp_sort_bullets(combo, "### Price / booking-rule checks completed 26 August 2026", "\\n**Prices and operating dates")',
+              '          combo = stable_camp_sort_bullets(combo, "### Price / booking-rule checks completed 26 August 2026")',
+          )
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit patch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/workflows/apply-round2-guide-revisions.yml
+          git diff --cached --check
+          git commit -m "Fix round-two source-list boundary"
+          git push origin HEAD:main
