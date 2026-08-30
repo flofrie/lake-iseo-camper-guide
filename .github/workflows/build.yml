@@ -28,6 +28,22 @@ jobs:
       - name: Render PDF with Typst
         run: quarto render guide.qmd --to iseo-guide-typst
 
+      - name: Collect retained Typst source
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p _output
+          typ_source="$(find . -type f -name '*.typ' \
+            ! -path './_extensions/*' \
+            ! -path './_output/*' \
+            | head -n 1 || true)"
+          if [[ -n "$typ_source" ]]; then
+            cp "$typ_source" _output/lake-iseo-camper-guide.typ
+            echo "Collected retained Typst source from $typ_source"
+          else
+            echo "No generated Typst source found outside _extensions; continuing without it."
+          fi
+
       - name: Verify outputs
         run: |
           test -s _output/index.html
