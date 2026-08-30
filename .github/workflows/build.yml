@@ -1,0 +1,42 @@
+name: Build travel guide
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.10.18
+
+      - name: Render HTML
+        run: quarto render guide.qmd --to html
+
+      - name: Render PDF with Typst
+        run: quarto render guide.qmd --to iseo-guide-typst
+
+      - name: Verify outputs
+        run: |
+          test -s _output/index.html
+          test -s _output/lake-iseo-camper-guide.pdf
+          ls -lah _output
+
+      - name: Upload HTML, PDF and retained Typst source
+        uses: actions/upload-artifact@v4
+        with:
+          name: lake-iseo-guide
+          path: _output/
+          if-no-files-found: error
