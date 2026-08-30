@@ -1,21 +1,30 @@
-**Official website / prices:** https://www.campingolivella.it/ · https://campingolivella.it/prezzi-pricing.html  
-**2026 season:** 20 March–25 October
+## 12. Camping Punta d’Oro — best small-site atmosphere, but a SUP-rental bottleneck
 
-Olivella sits directly on the lake in the same Via Cave cluster as Lagovivo, Camping Pilzone and Camping Cave. Its official site describes **large shaded pitches for caravans and campers**, shallow lake water, wastewater disposal and a boat ramp. It also explicitly states that it has an arrangement with **Lago Vivo Green Rental** “a due passi dal campeggio” — effectively a short walk away. The page specifically mentions kayaks/electric boats, while Lagovivo's own current operation separately confirms SUP rental, so the SUP advantage is the same nearby dedicated operator used by Pilzone/Cave rather than a campsite-owned fleet.
+**Location:** Via Ippolito Antonioli 51, Iseo  
+**Official website / booking:** <https://www.camping-puntadoro.com/en/>  
+**2026 season:** 28 March–18 October  
+**Scale:** 64 pitches; 16 directly on the lake
+Punta d’Oro is one of the strongest small-campsite choices if your priorities are **quiet camping, a genuinely good waterfront pitch and easy lake access**. For this particular trip, however, its SUP rental should be treated as a convenience rather than guaranteed capacity. The site slopes gently down toward a grassy beach, with steps/slipways into the water and a lake bottom that shelves gradually. The site rents **exactly two SUPs and three kayaks**. That makes the SUP service a real single-point-of-failure if two people are relying on boards at the same time; phone ahead and ask whether the boards can be held/reserved for the mornings you want to paddle.
 
-The price is unusually attractive for 2 September. The official 2026 table places 2 September in peak season. **Zone A** is clear at €17 for the pitch plus €9 per adult, with €1 tourist tax per adult: about **€37/night for two adults**. The site's Italian and English columns conflict slightly for **Zone B** (adult/pitch figures differ by €1), so the honest comparison is **about €47–50/night including tourist tax** rather than pretending there is one exact number. Electricity, showers, hot water and private parking are included in the pitch tariff.
+The official 2026 tariff is unusually transparent and includes **two people, 6A electricity, hot showers and two Wi-Fi connections**. Peak-season prices range from **€47.60 for a standard pitch** to **€71.40 for the best first/second-row lake pitches**, before tourist tax. There are also two non-lake pitches suitable for XXL campers up to about 9.5 m.
 
-There is one material downside for a rental camper: a current June/July 2026 camper review specifically describes **tight access and cramped manoeuvring**, especially for larger motorhomes; another current review describes the site as quiet, shaded and clean. For a medium camper, ask for the exact access route and pitch dimensions before booking.
 
-**Best for:** low price, direct lake access, Lagovivo proximity, people happy with a small traditional campsite.  
-**Downside:** access/manoeuvring can be awkward; facilities/reviews are more mixed than Pilzone; direct SUP rental is nearby rather than owned by Olivella.
+**2 September booking note:** Exact inventory is not publicly exposed. High-season minimum stays normally apply, but the campsite explicitly says shorter stays may be accepted when they fit gaps; for 1–2 nights, call the day before. See the consolidated availability/price table above.
+
+**Availability request:** <https://www.camping-puntadoro.com/en/booking-availability/>
+
+**Best for:** couples, quiet stays, own-SUP or rental-SUP trips, people who want Iseo town within walking distance.  
+**Downside:** expensive for the very best waterfront pitches; only a small number of SUPs are available; no ACSI/ADAC discount.
+
+### Practical note
+Punta d’Oro’s rules do **not** allow SUPs/kayaks to be left on the communal beach, even temporarily, so plan to return the board to your pitch/storage area after paddling.
 
 ---
 
 ## 13. Belvedere Clusane — attractive location, but verify transient touring pitches first
 
 **Location:** Via Risorgimento 132–134, Clusane d’Iseo  
-**Official website:** https://www.belvedereclusane.it/
+**Official website:** <https://www.belvedereclusane.it/>
 
 Belvedere is worth retaining in the guide because its own current site says it is **directly on Lake Iseo** and offers **pitches and stopover areas**, plus a 25 m lakeside pool, bar and restaurant/pizzeria. That makes the location worth retaining as a conditional option.
 
@@ -35,16 +44,18 @@ Because you are **not bringing boards**, this is more useful than a simple yes/n
 
 | Base / campsite | SUP access | Publicly known fleet | Advance booking evidence | Reliability for this trip |
 |---|---|---|---|---|
-| **Camping Pilzone / Camping Cave / Camping Olivella → Lagovivo** | Dedicated rental at Via Cave 1 | Official count not published; Aug 2026 reviewer rented **4 touring SUPs at once** and reported good quantity/range | **Phone reservations appreciated** | **Very good**; Olivella has a separate camper-access caveat |
-| **Camping Eurovil** | **On-site SUP rental** + Whassup elsewhere in Predore as a second rental channel | Campsite fleet count not published; Whassup fleet count also not published | Whassup offers online/advance booking; campsite rule not published | **Very good** because there are two independent rental options in Predore |
-| **Camping Eden → Surface SUP Academy / X Beach + RentalKles** | Dedicated Surface base on Via Piangrande plus a second Pisogne SUP rental business at RentalKles | Surface has multiple board categories; RentalKles publishes SUP rental from €5/hour | Both operators publish contact/booking channels | **Excellent redundancy** for a northern base |
-| **Camping del Sole** | Directly on-site | Count not published | Contact on-site rental ahead; no SUP-specific reservation rule published | **Good–very good** |
-| **Camping Quai** | Directly on-site | Count not published | **Reserve at least 1 day ahead** at reception | **Very good** |
-| **Sassabanek / Sporting Lido** | Directly within complex | Count not published | No clear reservation rule found | **Good**, and Lido open through 6 Sep |
-| **Punta d’Oro** | Directly on-site | **2 SUPs** + 3 kayaks | No formal SUP reservation policy found; call ahead | **Convenient but fragile** |
+| **Camping Pilzone → Lagovivo** | Dedicated rental at Via Cave 1 | Official count not published; Aug 2026 reviewer rented **4 touring SUPs at once** and reported good quantity/range | **Phone reservations appreciated** | **Very good** |
+| **Camping Cave → Lagovivo** | Dedicated rental at Via Cave 1, a short walk away | Official count not published; Aug 2026 reviewer rented **4 touring SUPs at once** and reported good quantity/range | **Phone reservations appreciated** | **Very good** |
 | **Riva di San Pietro → Surface SUP Academy** | A few doors away in Marone | Multiple board categories; count not published | Contact available; guided activities are reservation-based | **Very good** |
-| **Covelo** | No verified on-site SUP | **Il Lido di Iseo** rents SUPs to non-lido guests by reservation; otherwise use Pilzone operators | Il Lido requires reservation/payment but no lido admission | **Moderate–good**, but involves leaving the campsite |
+| **Camping Quai** | Directly on-site | Count not published | **Reserve at least 1 day ahead** at reception | **Very good** |
+| **Camping Eurovil** | **On-site SUP rental** + Whassup elsewhere in Predore as a second rental channel | Campsite fleet count not published; Whassup fleet count also not published | Whassup offers online/advance booking; campsite rule not published | **Very good** because there are two independent rental options in Predore |
+| **Camping del Sole Village** | Directly on-site | Count not published | Contact on-site rental ahead; no SUP-specific reservation rule published | **Good–very good** |
+| **Camping Eden → Surface SUP Academy / X Beach + RentalKles** | Dedicated Surface base on Via Piangrande plus a second Pisogne SUP rental business at RentalKles | Surface has multiple board categories; RentalKles publishes SUP rental from €5/hour | Both operators publish contact/booking channels | **Excellent redundancy** for a northern base |
+| **Camping Punta d’Oro** | Directly on-site | **2 SUPs** + 3 kayaks | No formal SUP reservation policy found; call ahead | **Convenient but fragile** |
+| **Camping Covelo** | No verified on-site SUP | **Il Lido di Iseo** rents SUPs to non-lido guests by reservation; otherwise use Pilzone operators | Il Lido requires reservation/payment but no lido admission | **Moderate–good**, but involves leaving the campsite |
 | **Camping Iseo** | No verified on-site SUP | **Il Lido di Iseo** is a genuine public rental fallback and explicitly accepts SUP renters who are not lido guests | Reservation required | **Good fallback**, though not on-site |
+| **Sassabanek / Sporting Lido** | Directly within complex | Count not published | No clear reservation rule found | **Good**, and Lido open through 6 Sep |
+| **Camping Olivella → Lagovivo** | Dedicated rental at Via Cave 1, a short walk away | Official count not published; Aug 2026 reviewer rented **4 touring SUPs at once** and reported good quantity/range | **Phone reservations appreciated** | **Very good**, with a separate camper-access caveat |
 | **Belvedere Clusane** | No verified on-site SUP | Separate rental trip required; do not assume Whassup is walkable | — | **Low–moderate**, and transient pitch status must first be confirmed |
 
 ### Published rental prices worth knowing

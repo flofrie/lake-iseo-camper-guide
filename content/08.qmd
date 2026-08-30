@@ -21,11 +21,11 @@ For campsite facts and prices, **prefer the campsite's own website**. Use the di
 
 | Resource | What it is useful for | Link |
 |---|---|---|
-| **Visit Lake Iseo** | Official tourism portal; campsites, SUP operators, attractions, events and local practical information | https://visitlakeiseo.info/ |
-| **Navigazione Lago d’Iseo** | Official ferries: Monte Isola routes, timetables, fares and notices. Particularly useful because ferry traffic matters when paddling across the lake | https://navigazionelagoiseo.it/en/ |
-| **Camping.info — Lake Iseo** | Broad campsite directory with camper reviews and rating breakdowns; currently lists about 15 sites around the lake | https://www.camping.info/en/popular-region/lake-iseo |
-| **PiNCAMP / ADAC — Iseo** | ADAC campsite profiles, ratings, pitch counts and filters; useful as a second opinion on facilities | https://www.pincamp.com/italy/lombardy/iseo |
-| **CampingCard ACSI — Lake Iseo** | Low-season discounts and inspector notes. Covelo's 2026 acceptance starts 1 Sep (fourth-row only); Sassabanek starts 6 Sep. Physical **or digital** valid card can be presented/scanned | https://www.campingcard.co.uk/italy/lake-iseo/ |
-| **Pitchup — Iseo** | Useful for live-ish bookable inventory, prices and reviews where a campsite participates; coverage is incomplete | https://www.pitchup.com/campsites/italy/lombardia/brescia/iseo/ |
-| **CamperOnLine stopovers around Lake Iseo** | Motorhome stopovers, camper areas and services around the lake | https://www.camperonline.com/en/motorhome-stopovers/camper-stop/lago-d-iseo/985 |
-| **Campercontact** | Strong European motorhome community database with recent reviews and practical facilities information | https://www.campercontact.com/ |
+| **Visit Lake Iseo** | Official tourism portal; campsites, SUP operators, attractions, events and local practical information | <https://visitlakeiseo.info/> |
+| **Navigazione Lago d’Iseo** | Official ferries: Monte Isola routes, timetables, fares and notices. Particularly useful because ferry traffic matters when paddling across the lake | <https://navigazionelagoiseo.it/en/> |
+| **Camping.info — Lake Iseo** | Broad campsite directory with camper reviews and rating breakdowns; currently lists about 15 sites around the lake | <https://www.camping.info/en/popular-region/lake-iseo> |
+| **PiNCAMP / ADAC — Iseo** | ADAC campsite profiles, ratings, pitch counts and filters; useful as a second opinion on facilities | <https://www.pincamp.com/italy/lombardy/iseo> |
+| **CampingCard ACSI — Lake Iseo** | Low-season discounts and inspector notes. Covelo's 2026 acceptance starts 1 Sep (fourth-row only); Sassabanek starts 6 Sep. Physical **or digital** valid card can be presented/scanned | <https://www.campingcard.co.uk/italy/lake-iseo/> |
+| **Pitchup — Iseo** | Useful for live-ish bookable inventory, prices and reviews where a campsite participates; coverage is incomplete | <https://www.pitchup.com/campsites/italy/lombardia/brescia/iseo/> |
+| **CamperOnLine stopovers around Lake Iseo** | Motorhome stopovers, camper areas and services around the lake | <https://www.camperonline.com/en/motorhome-stopovers/camper-stop/lago-d-iseo/985> |
+| **Campercontact** | Strong European motorhome community database with recent reviews and practical facilities information | <https://www.campercontact.com/> |

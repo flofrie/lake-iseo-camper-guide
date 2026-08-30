@@ -71,7 +71,7 @@
       width: 100%,
       above: 0.5em,
       below: 1.15em,
-      inset: (top: 4pt, bottom: 5pt),
+      inset: (top: 11pt, bottom: 5pt),
       stroke: (top: 3pt + lake),
     )[
       #text(size: 18pt, weight: "bold", fill: deep)[#it.body]

@@ -25,7 +25,7 @@ These are useful if the lakeside campsites cannot take you. They are **not subst
 
 **Useful contacts:** Baia delle Rose camper area +39 371 3844297 (availability calls 08:00–19:00); Zone area +39 347 4491146.
 
-**Fallback links:** Iseo Viale Europa: https://www.camperonline.it/sosta-camper/aree-di-sosta/italia/lombardia/parcheggio-camper/21302 · Baia delle Rose: https://www.baiadellerose.it/area-camper/ · Zone: https://www.camperonline.it/sosta-camper/aree-di-sosta/italia/lombardia/area-di-sosta-camper-zone/22792
+**Fallback links:** Iseo Viale Europa: <https://www.camperonline.it/sosta-camper/aree-di-sosta/italia/lombardia/parcheggio-camper/21302> · Baia delle Rose: <https://www.baiadellerose.it/area-camper/> · Zone: <https://www.camperonline.it/sosta-camper/aree-di-sosta/italia/lombardia/area-di-sosta-camper-zone/22792>
 
 ---
 
@@ -34,26 +34,60 @@ These are useful if the lakeside campsites cannot take you. They are **not subst
 | Best for | Campsite | Why |
 |---|---|---|
 | **Best for this trip (rental reliability + value)** | **Camping Pilzone** | Direct lakefront camping with dedicated Lagovivo SUP rental effectively next door; phone reservations welcomed |
+| **Best shady Pilzone alternative** | **Camping Cave** | Lagovivo nearby; shaded, quieter traditional campsite |
+| **Best Marone SUP base** | **Riva di San Pietro** | Surface SUP Academy nearby with detailed 2026 rental options |
+| **Best small campsite with reservable SUP rental** | **Camping Quai** | On-site SUP rental with published prices and day-before equipment reservation recommendation |
 | **Best Predore all-rounder** | **Camping Eurovil** | On-site SUP rental, 6A camper pitches, new 2026 lake-view camper area, plus Whassup as a second rental option in Predore |
 | **Best full-service rental option** | **Camping del Sole Village** | Regular on-site SUP/canoe/pedal-boat rental plus resort facilities; fleet size not published |
-| **Best small campsite with reservable SUP rental** | **Camping Quai** | On-site SUP rental with published prices and day-before equipment reservation recommendation |
 | **Best Pisogne / north-lake alternative** | **Camping Eden** | Direct lakefront camping in Pisogne; proper camper service; Surface SUP Academy at X Beach on the same lakeside strip |
-| **Best early-September facilities/value** | **Sassabanek** | 10% September pitch promotion; Sporting Lido SUP rental open through 6 Sep |
 | **Best small-site atmosphere** | **Camping Punta d’Oro** | Quiet, compact, strong lakefront pitches — but only two SUPs, so rental is a bottleneck |
-| **Best Marone SUP base** | **Riva di San Pietro** | Surface SUP Academy nearby with detailed 2026 rental options |
-| **Cheapest direct-lake fallback** | **Camping Olivella** | Very low 2 Sep tariff and Lagovivo nearby; confirm access/pitch fit because reviews warn about tight manoeuvring |
 | **Best atmosphere / views if bringing a board** | **Camping Covelo** | Long shoreline and lake views from every pitch; no verified on-site SUP rental |
 | **Best quiet sandy launch** | **Camping Iseo** | Fine-sand gently shelving beach; ideal for own-board use |
-| **Best shady Pilzone alternative** | **Camping Cave** | Lagovivo nearby; shaded, quieter traditional campsite |
+| **Best early-September facilities/value** | **Sassabanek** | 10% September pitch promotion; Sporting Lido SUP rental open through 6 Sep |
+| **Cheapest direct-lake fallback** | **Camping Olivella** | Very low 2 Sep tariff and Lagovivo nearby; confirm access/pitch fit because reviews warn about tight manoeuvring |
 | **Conditional south-shore fallback** | **Belvedere Clusane** | Attractive direct-lake setting, but current sources conflict on whether transient touring pitches are actually available |
 
 # Campsite profiles
 
-The profile order below is geographic/reference-oriented rather than the recommendation ranking above.
+The profile order below follows the same campsite order used throughout this guide.
 
-## 1. Camping Punta d’Oro — best small-site atmosphere, but a SUP-rental bottleneck
+## 1. Camping Covelo — best atmosphere and panoramic lake views
 
-**Location:** Via Ippolito Antonioli 51, Iseo  
-**Official website / booking:** https://www.camping-puntadoro.com/en/  
-**2026 season:** 28 March–18 October  
-**Scale:** 64 pitches; 16 directly on the lake
+**Location:** Via Covelo 18, Iseo  
+**Official website / booking:** <https://www.campingcovelo.com/>  
+**2026 season:** 30 April–26 October  
+**Shoreline:** about 300 m
+
+Covelo is one of the most consistently praised campsites around the lake. The official site says the pitches are arranged so that **every pitch has a lake view**, with lakefront, second-, third- and fourth-row categories. It has a restaurant/pizzeria, bar, minimarket, free Wi-Fi and bicycle/boat rental.
+
+For SUP rental, the current position is straightforward: the current official facilities list **does not mention SUP rental**. That makes Covelo excellent if you already have an inflatable SUP, but not the best choice if you need a board waiting for you on site.
+
+Recent reviews are unusually consistent: guests praise the staff, cleanliness, restaurant and views. The repeated minor negatives are that the sanitary facilities are somewhat older and that road/rail noise can be audible depending on the pitch.
+
+
+**2 September booking note:** Exact live inventory is not publicly readable. The published 2026 ACSI rate starts on 1 September but is limited to fourth-row pitches; premium lake rows are excluded. See the consolidated availability/price table above.
+
+**Booking / price list:** <https://www.campingcovelo.com/> · <https://www.campingcovelo.com/prices-list.html>
+
+**Best for:** own-SUP travellers, relaxed atmosphere, lake views from almost anywhere, longer stays.  
+**Downside:** no verified on-site SUP rental; some transport noise; current prices are less transparent online than at Punta d’Oro/Pilzone/Cave.
+
+---
+
+## 2. Camping Pilzone — best value with SUP rental effectively next door
+
+**Location:** Via Cave 11, Pilzone d’Iseo  
+**Official website / booking:** <https://campingpilzone.altervista.org/>  
+**2026 season:** 1 April–30 September  
+**High-season tariff band:** 26 June–13 September
+
+Pilzone is one of the strongest value options. In peak season 2026, the official tariff is **€25 standard pitch, €30 second/third/fourth-row lake zone, or €34 first row**, plus **€13 per adult**. Electricity and one car are included in the standard pitch tariff; tourist tax is extra.
+
+The particularly useful feature for this guide is location: **Lagovivo**, an established SUP/kayak/pedal-boat operator, is at Via Cave 1, only a short distance along the same road. Regional tourism material describes Lagovivo as suitable for beginners through experienced paddlers, says staff give a safety briefing and route advice, and notes that Monte Isola can be reached from Pilzone. An official Lagovivo rental leaflet labels the crossing as roughly **45 minutes by SUP** (and 30 minutes by kayak). Treat those figures only as promotional route estimates in suitable conditions, never as a target time or safety guarantee. A recent August 2026 review reports four touring SUPs being rented simultaneously without advance booking, but phone reservations are still explicitly welcomed.
+
+
+**2 September booking note:** No reliable public live inventory is exposed; confirm directly. Published high-season pricing is summarised in the comparison table above.
+
+**Direct enquiry:** campeggiopilzone@gmail.com · <https://campingpilzone.altervista.org/prezzi.html>
+**Best for:** cost-conscious travellers without their own board; straightforward lakefront camping; reliable access to a dedicated rental operator.  
+**Downside:** simpler facilities than the resort sites; only small dogs (max one) are listed in the current tariff.

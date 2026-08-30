@@ -1,23 +1,23 @@
-| **park4night** | Community-reported camper parking and overnight spots; useful for backup stops rather than replacing a booked lakeside campsite | https://park4night.com/ |
-| **iOverlander** | Community overlanding database; less comprehensive than the European camper-specific apps here, but useful as a cross-check | https://www.ioverlander.com/ |
+| **park4night** | Community-reported camper parking and overnight spots; useful for backup stops rather than replacing a booked lakeside campsite | <https://park4night.com/> |
+| **iOverlander** | Community overlanding database; less comprehensive than the European camper-specific apps here, but useful as a cross-check | <https://www.ioverlander.com/> |
 
 ## Camper forums and experience reports
 
 | Resource | Why it is worth reading | Link |
 |---|---|---|
-| **CamperOnLine — roads around Lake Iseo (2024)** | The most useful current-ish discussion I found for camper access. It specifically flags the Riva di Solto–Lovere scenic road for wider/longer vehicles | https://www.camperonline.it/forum/viaggiare/viaggi-in-italia/strade-intorno-al-lago-di-iseo/267308 |
-| **CamperOnLine — Lago d’Iseo thread** | General Italian camper discussion and local stopping ideas | https://www.camperonline.it/forum/viaggiare/viaggi-in-italia/lago-d-iseo/205755 |
-| **Wohnmobilforum — route to Lago d’Iseo** | Older German motorhome discussion of access routes and the east-shore galleries; useful background, but treat age-sensitive details cautiously | https://www.wohnmobilforum.de/w-t94495.html |
-| **Wohnmobilforum — Iseo vs Como stopover** | Older but still useful first-hand descriptions of Punta d’Oro and Riva di San Pietro | https://www.wohnmobilforum.de/w-t40341.html |
+| **CamperOnLine — roads around Lake Iseo (2024)** | The most useful current-ish discussion I found for camper access. It specifically flags the Riva di Solto–Lovere scenic road for wider/longer vehicles | <https://www.camperonline.it/forum/viaggiare/viaggi-in-italia/strade-intorno-al-lago-di-iseo/267308> |
+| **CamperOnLine — Lago d’Iseo thread** | General Italian camper discussion and local stopping ideas | <https://www.camperonline.it/forum/viaggiare/viaggi-in-italia/lago-d-iseo/205755> |
+| **Wohnmobilforum — route to Lago d’Iseo** | Older German motorhome discussion of access routes and the east-shore galleries; useful background, but treat age-sensitive details cautiously | <https://www.wohnmobilforum.de/w-t94495.html> |
+| **Wohnmobilforum — Iseo vs Como stopover** | Older but still useful first-hand descriptions of Punta d’Oro and Riva di San Pietro | <https://www.wohnmobilforum.de/w-t40341.html> |
 
 ## Further reading and inspiration
 
 These are useful for ideas and photographs, but give them less weight than official campsite pages or current camper reviews:
 
-- **This Is Italy / DitIsItalie — most beautiful campsites around Lake Iseo:** https://www.ditisitalie.nl/en/most-beautiful-campsites-iseomeer/
-- **Estivo Travel — Lake Iseo campsite overview:** https://www.estivotravel.com/en/campings/italy/lake-iseo
-- **SiViaggia — Lake Iseo beaches:** https://siviaggia.it/idee-di-viaggio/spiagge-piu-belle-lago-iseo/531506/
-- **Campwerk — Lake Iseo camping guide:** https://www.campwerk.co.uk/iseo-lake-camping-lake-paradise-northern-italy-tips/ (useful for inspiration; not relied on here for factual verification)
+- **This Is Italy / DitIsItalie — most beautiful campsites around Lake Iseo:** <https://www.ditisitalie.nl/en/most-beautiful-campsites-iseomeer/>
+- **Estivo Travel — Lake Iseo campsite overview:** <https://www.estivotravel.com/en/campings/italy/lake-iseo>
+- **SiViaggia — Lake Iseo beaches:** <https://siviaggia.it/idee-di-viaggio/spiagge-piu-belle-lago-iseo/531506/>
+- **Campwerk — Lake Iseo camping guide:** <https://www.campwerk.co.uk/iseo-lake-camping-lake-paradise-northern-italy-tips/> (useful for inspiration; not relied on here for factual verification)
 
 ## SUP rental / watersports links
 
@@ -25,39 +25,39 @@ Because you are **not bringing your own boards**, these are more important for y
 
 | Operator / resource | Location / relevance | Link |
 |---|---|---|
-| **Visit Lake Iseo — SUP rental directory** | Official list of current SUP rental operators around the lake | https://visitlakeiseo.info/en/categorie_operatori_sportivi/rent/sports-rentals/sup-rental/ |
-| **Lagovivo** | Pilzone, Via Cave 1; SUP/kayak rental close to Camping Pilzone and Camping Cave | https://www.in-lombardia.it/operatore/lagovivo-noleggio-sport-acquatici |
-| **Surface SUP Academy** | Marone **and X Beach, Pisogne**; dedicated 2026 SUP rental with published prices and multiple board categories | https://suplagoiseo.com/noleggio/ |
-| **Whassup Rental** | Predore; bookable SUP rental, guided outings and sunset/aperitivo trips; useful second rental channel for Eurovil | https://www.whassuprental.com/ |
-| **RentalKles** | Pisogne; inexpensive SUP/kayak rental (€5/hour SUP) and useful second channel near Camping Eden | https://www.rentalkles.com/prezzi |
-| **Canottieri Sebino Lovere** | Lovere; SUP/kayak rental and lessons at the top of the lake | https://canottierisebino.it/ |
-| **Il Lido di Iseo** | Iseo; public SUP/canoe rental available by reservation even without lido admission | https://illidoiseo.it/sport/ |
-| **Camping Eurovil SUP rental** | SUP rental is explicitly listed as an on-site campsite service; fleet size/pricing not published | https://campingeurovil.it/en/services/ |
-| **SportAction** | Grè / Solto Collina on the west shore; SUP rental, guided tours and other watersports | https://www.sportaction.it/en/home-en/ |
-| **Camping del Sole watersports** | Verified SUP rental directly from the campsite; fleet size not published | https://www.campingdelsole.it/en/sports/ |
-| **Camping Quai SUP & kayak rental** | On-site SUP rental; €10/hour; equipment reservation at least one day ahead recommended | https://campingquai.it/en/rental-sport/ |
-| **Sassabanek Sporting Lido** | SUP/kayak rental within the complex; 2026 Lido open through 6 Sep | https://www.sassabanek.com/en/sporting-lido/ |
-| **Il Lido di Iseo** | Iseo, Via per Rovato 28; canoe/SUP rental is available **even to non-lido guests**, by reservation and hourly payment | https://illidoiseo.it/sport/ |
-| **Canottieri Sebino Lovere** | Lovere; current official site lists **5 SUPs**. Visit Lake Iseo publishes €12/1h and €20/2h including buoyancy aid | https://canottierisebino.it/ |
-| **RentalKles** | Pisogne, Via Neziole; SUPs from **€5/hour**, with multi-day rates. Useful second Pisogne rental channel in addition to Surface/X Beach | https://www.rentalkles.com/sport-acquatici |
+| **Visit Lake Iseo — SUP rental directory** | Official list of current SUP rental operators around the lake | <https://visitlakeiseo.info/en/categorie_operatori_sportivi/rent/sports-rentals/sup-rental/> |
+| **Lagovivo** | Pilzone, Via Cave 1; SUP/kayak rental close to Camping Pilzone and Camping Cave | <https://www.in-lombardia.it/operatore/lagovivo-noleggio-sport-acquatici> |
+| **Surface SUP Academy** | Marone **and X Beach, Pisogne**; dedicated 2026 SUP rental with published prices and multiple board categories | <https://suplagoiseo.com/noleggio/> |
+| **Whassup Rental** | Predore; bookable SUP rental, guided outings and sunset/aperitivo trips; useful second rental channel for Eurovil | <https://www.whassuprental.com/> |
+| **RentalKles** | Pisogne; inexpensive SUP/kayak rental (€5/hour SUP) and useful second channel near Camping Eden | <https://www.rentalkles.com/prezzi> |
+| **Canottieri Sebino Lovere** | Lovere; SUP/kayak rental and lessons at the top of the lake | <https://canottierisebino.it/> |
+| **Il Lido di Iseo** | Iseo; public SUP/canoe rental available by reservation even without lido admission | <https://illidoiseo.it/sport/> |
+| **Camping Eurovil SUP rental** | SUP rental is explicitly listed as an on-site campsite service; fleet size/pricing not published | <https://campingeurovil.it/en/services/> |
+| **SportAction** | Grè / Solto Collina on the west shore; SUP rental, guided tours and other watersports | <https://www.sportaction.it/en/home-en/> |
+| **Camping del Sole watersports** | Verified SUP rental directly from the campsite; fleet size not published | <https://www.campingdelsole.it/en/sports/> |
+| **Camping Quai SUP & kayak rental** | On-site SUP rental; €10/hour; equipment reservation at least one day ahead recommended | <https://campingquai.it/en/rental-sport/> |
+| **Sassabanek Sporting Lido** | SUP/kayak rental within the complex; 2026 Lido open through 6 Sep | <https://www.sassabanek.com/en/sporting-lido/> |
+| **Il Lido di Iseo** | Iseo, Via per Rovato 28; canoe/SUP rental is available **even to non-lido guests**, by reservation and hourly payment | <https://illidoiseo.it/sport/> |
+| **Canottieri Sebino Lovere** | Lovere; current official site lists **5 SUPs**. Visit Lake Iseo publishes €12/1h and €20/2h including buoyancy aid | <https://canottierisebino.it/> |
+| **RentalKles** | Pisogne, Via Neziole; SUPs from **€5/hour**, with multi-day rates. Useful second Pisogne rental channel in addition to Surface/X Beach | <https://www.rentalkles.com/sport-acquatici> |
 
 # Official campsite websites — quick reference
 
 | Campsite | Official website | Best reason to consider it for this trip |
 |---|---|---|
-| **Camping Punta d’Oro** | https://www.camping-puntadoro.com/en/ | Excellent small-site atmosphere, but only two on-site SUPs |
-| **Camping Covelo** | https://www.campingcovelo.com/ | Excellent lake views and atmosphere; less convenient without your own boards |
-| **Camping del Sole Village** | https://www.campingdelsole.it/en/ | Full-service resort + on-site SUP rental |
-| **Camping Pilzone** | https://campingpilzone.altervista.org/ | Best balance for this trip; dedicated Lagovivo rental extremely close |
-| **Camping Iseo** | https://www.campingiseo.it/en/home-english/ | Quiet sandy lake access; no verified on-site SUP rental |
-| **Camping Cave** | https://www.campingcave.it/en/ | Shady Pilzone alternative; Lagovivo nearby |
-| **Camping Quai** | https://campingquai.it/ | Small family-run site with on-site SUP rental and advance equipment booking guidance |
-| **Riva di San Pietro** | https://www.rivasanpietro.it/ | Northern base; Surface SUP Academy nearby |
-| **Caravan Camping Sassabanek** | https://www.sassabanek.com/en/ | September discount + Sporting Lido SUP rental (open through 6 Sep) |
-| **Camping Eurovil** | https://campingeurovil.it/en/ | New 2026 lake-view camper area + on-site SUP rental + second Predore rental option |
-| **Camping Eden Pisogne** | https://campingedenpisogne.com/ | Direct north-lake base + full camper service + Surface/X Beach nearby |
-| **Camping Olivella** | https://www.campingolivella.it/ | Very low published tariff + direct lake + Lagovivo nearby; confirm access fit |
-| **Belvedere Clusane** | https://www.belvedereclusane.it/ | Direct-lake setting, but **confirm transient touring pitch availability before relying on it** |
+| **Camping Pilzone** | <https://campingpilzone.altervista.org/> | Best balance for this trip; dedicated Lagovivo rental extremely close |
+| **Camping Cave** | <https://www.campingcave.it/en/> | Shady Pilzone alternative; Lagovivo nearby |
+| **Riva di San Pietro** | <https://www.rivasanpietro.it/> | Northern base; Surface SUP Academy nearby |
+| **Camping Quai** | <https://campingquai.it/> | Small family-run site with on-site SUP rental and advance equipment booking guidance |
+| **Camping Eurovil** | <https://campingeurovil.it/en/> | New 2026 lake-view camper area + on-site SUP rental + second Predore rental option |
+| **Camping del Sole Village** | <https://www.campingdelsole.it/en/> | Full-service resort + on-site SUP rental |
+| **Camping Eden Pisogne** | <https://campingedenpisogne.com/> | Direct north-lake base + full camper service + Surface/X Beach nearby |
+| **Camping Punta d’Oro** | <https://www.camping-puntadoro.com/en/> | Excellent small-site atmosphere, but only two on-site SUPs |
+| **Camping Covelo** | <https://www.campingcovelo.com/> | Excellent lake views and atmosphere; less convenient without your own boards |
+| **Camping Iseo** | <https://www.campingiseo.it/en/home-english/> | Quiet sandy lake access; no verified on-site SUP rental |
+| **Caravan Camping Sassabanek** | <https://www.sassabanek.com/en/> | September discount + Sporting Lido SUP rental (open through 6 Sep) |
+| **Camping Olivella** | <https://www.campingolivella.it/> | Very low published tariff + direct lake + Lagovivo nearby; confirm access fit |
+| **Belvedere Clusane** | <https://www.belvedereclusane.it/> | Direct-lake setting, but **confirm transient touring pitch availability before relying on it** |
 
 # Deliberate exclusions and ambiguous listings
 
@@ -74,7 +74,28 @@ A regional campsite directory can be misleading because it may mix genuinely lak
 # Sources checked
 
 ## Official / primary
-- Camping Punta d’Oro: https://www.camping-puntadoro.com/en/
-- Camping Covelo: https://www.campingcovelo.com/
-- Camping del Sole Village: https://www.campingdelsole.it/en/
-- Camping Iseo: https://www.campingiseo.it/en/home-english/
+- Camping Pilzone: <https://campingpilzone.altervista.org/prices.html>
+- Camping Cave: <https://www.campingcave.it/listino-prezzi/>
+- Riva di San Pietro: <https://www.rivasanpietro.it/>
+- Camping Quai: <https://campingquai.it/en/price-list/>
+- Camping Eurovil official camping/services/contact pages: <https://campingeurovil.it/en/camping-2/> · <https://campingeurovil.it/en/services/> · <https://campingeurovil.it/en/contact/>
+- Visit Lake Iseo — Camping Eurovil profile: <https://visitlakeiseo.info/ospitalita/campeggio-eurovil/>
+- Camping del Sole Village: <https://www.campingdelsole.it/en/>
+- Camping Eden Pisogne: <https://campingedenpisogne.com/>
+- Italia.it — Camping Eden Pisogne: <https://www.italia.it/en/lombardia/pisogne/where-to-sleep/camping-eden>
+- PiNCAMP / camping.info — Camping Eden Pisogne: <https://www.pincamp.com/campings/camping-eden-pisogne> · <https://www.camping.info/en/campsite/campeggio-eden>
+- Camping Punta d’Oro: <https://www.camping-puntadoro.com/en/>
+- Camping Covelo: <https://www.campingcovelo.com/>
+- Camping Iseo: <https://www.campingiseo.it/en/home-english/>
+- Sassabanek: <https://www.sassabanek.com/en/>
+- Camping Olivella official site and 2026 tariff: <https://www.campingolivella.it/> · <https://campingolivella.it/prezzi-pricing.html>
+- Belvedere Clusane official camping page: <https://www.belvedereclusane.it/camping.html>
+- PiNCAMP — Belvedere Clusane: <https://www.pincamp.it/campings/belvedere-clusane-camping>
+- Surface SUP Academy: <https://suplagoiseo.com/>
+- Visit Lake Iseo official tourism portal: <https://visitlakeiseo.info/>
+- ATS Brescia bathing-water information: <https://www.ats-brescia.it/amministrazione-trasparente/balneazione-laghi>
+- Il Lido di Iseo sport/FAQ: <https://illidoiseo.it/sport/> · <https://illidoiseo.it/faqs/>
+- Canottieri Sebino Lovere: <https://canottierisebino.it/> · <https://visitlakeiseo.info/en/touristic-operators/canottieri-sebino-lovere/>
+- RentalKles Pisogne: <https://www.rentalkles.com/sport-acquatici> · <https://www.rentalkles.com/prezzi>
+- Baia delle Rose camper area, Costa Volpino: <https://www.baiadellerose.it/en/area-camper/>
+- Whassup Rental Predore: <https://www.whassuprental.com/>
