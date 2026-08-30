@@ -58,7 +58,7 @@ jobs:
           replace_once(
               "content/01.qmd",
               "\n### What this changes for your shortlist\n",
-              "\n",
+              "",
           )
           p = Path("content/02.qmd")
           text = p.read_text(encoding="utf-8")
@@ -121,6 +121,10 @@ jobs:
               "h1 {\n  margin-top: 3rem;\n  padding-top: .5rem;\n  border-top: 5px solid var(--iseo-lake);\n  letter-spacing: -.025em;\n}\n\nh2 {\n  color: var(--iseo-lake);\n  margin-top: 2.2rem;\n}\n\nh3 {\n  color: var(--iseo-deep);\n}\n",
               "h1 {\n  margin-top: 4.4rem;\n  margin-bottom: 1.8rem;\n  padding-top: .5rem;\n  border-top: 5px solid var(--iseo-lake);\n  letter-spacing: -.025em;\n}\n\nh2 {\n  color: var(--iseo-lake);\n  margin-top: 4.6rem;\n  margin-bottom: 1.55rem;\n}\n\nh3 {\n  color: var(--iseo-deep);\n  margin-top: 2.8rem;\n  margin-bottom: 1.15rem;\n}\n",
           )
+
+          # Keep edited Markdown files to one conventional trailing newline.
+          for path in ["content/01.qmd", "content/02.qmd", "content/07.qmd", "content/08.qmd"]:
+              write(path, read(path).rstrip() + "\n")
           PY
 
       - name: Commit revisions
