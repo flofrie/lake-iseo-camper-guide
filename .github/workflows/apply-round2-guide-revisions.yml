@@ -1,0 +1,283 @@
+name: Apply round-two guide revisions
+
+on:
+  push:
+    branches: [main]
+    paths: [.round2-guide-trigger]
+
+permissions:
+  contents: write
+
+jobs:
+  revise:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Apply ordering, links and heading spacing
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          CANONICAL = [
+              "Camping Pilzone",
+              "Camping Cave",
+              "Riva di San Pietro",
+              "Camping Quai",
+              "Camping Eurovil",
+              "Camping del Sole Village",
+              "Camping Eden",
+              "Camping Punta d’Oro",
+              "Camping Covelo",
+              "Camping Iseo",
+              "Sassabanek",
+              "Camping Olivella",
+              "Belvedere Clusane",
+          ]
+
+          def read(path):
+              return Path(path).read_text(encoding="utf-8")
+
+          def write(path, text):
+              Path(path).write_text(text.rstrip() + "\n", encoding="utf-8")
+
+          def normalize_name(text):
+              t = re.sub(r"[*_`]", "", text)
+              checks = [
+                  ("Camping Pilzone", ["Camping Pilzone", "Pilzone"]),
+                  ("Camping Cave", ["Camping Cave"]),
+                  ("Riva di San Pietro", ["Riva di San Pietro"]),
+                  ("Camping Quai", ["Camping Quai", "Quai"]),
+                  ("Camping Eurovil", ["Camping Eurovil", "Eurovil"]),
+                  ("Camping del Sole Village", ["Camping del Sole Village", "Camping del Sole", "del Sole Village", "del Sole"]),
+                  ("Camping Eden", ["Camping Eden Pisogne", "Camping Eden", "Eden (Pisogne)", "Eden"]),
+                  ("Camping Punta d’Oro", ["Camping Punta d’Oro", "Punta d’Oro"]),
+                  ("Camping Covelo", ["Camping Covelo", "Covelo"]),
+                  ("Camping Iseo", ["Camping Iseo"]),
+                  ("Sassabanek", ["Caravan Camping Sassabanek", "Sassabanek"]),
+                  ("Camping Olivella", ["Camping Olivella", "Olivella"]),
+                  ("Belvedere Clusane", ["Belvedere Clusane"]),
+              ]
+              for canonical, aliases in checks:
+                  if any(alias in t for alias in aliases):
+                      return canonical
+              raise ValueError(f"Could not identify campsite in: {text}")
+
+          ORDER = {name: i for i, name in enumerate(CANONICAL)}
+
+          def camp_key(text):
+              return ORDER[normalize_name(text)]
+
+          # 1) More space between the thick H1 rule and the heading text.
+          typ_path = "_extensions/iseo-guide/typst-template.typ"
+          typ = read(typ_path)
+          old = "inset: (top: 4pt, bottom: 5pt),"
+          if typ.count(old) != 1:
+              raise SystemExit(f"Expected one H1 inset declaration, found {typ.count(old)}")
+          typ = typ.replace(old, "inset: (top: 11pt, bottom: 5pt),", 1)
+          write(typ_path, typ)
+
+          css_path = "styles.scss"
+          css = read(css_path)
+          old = "  padding-top: .5rem;"
+          if css.count(old) != 1:
+              raise SystemExit(f"Expected one H1 padding declaration, found {css.count(old)}")
+          css = css.replace(old, "  padding-top: 1rem;", 1)
+          write(css_path, css)
+
+          # 2) Reorder comparative campsite presentations in content/01.
+          p01 = read("content/01.qmd")
+
+          # Reorder names within the shore groupings where multiple campsites share a cell.
+          p01 = p01.replace(
+              "| **Iseo / south shore** | del Sole, Quai, Punta d’Oro, Sassabanek, Camping Iseo, Covelo |",
+              "| **Iseo / south shore** | Quai, del Sole, Punta d’Oro, Covelo, Camping Iseo, Sassabanek |",
+          )
+
+          # Best-fit numbered list.
+          start = p01.index("### Best fit for this trip")
+          list_start = p01.index("\n1. ", start) + 1
+          list_end = p01.index("\n\n**Belvedere Clusane**", list_start)
+          items = p01[list_start:list_end].splitlines()
+          if len(items) != 12:
+              raise SystemExit(f"Expected 12 best-fit items, found {len(items)}")
+          items.sort(key=camp_key)
+          items = [re.sub(r"^\d+\.", f"{i}.", line, count=1) for i, line in enumerate(items, 1)]
+          p01 = p01[:list_start] + "\n".join(items) + p01[list_end:]
+
+          # Consolidated campsite price/availability table.
+          table_header = "| Campsite | Availability for arrival 2 Sep | Approx. price for 2 adults + camper on 2 Sep | What the current booking information means |"
+          th = p01.index(table_header)
+          rows_start = p01.index("\n| **", th) + 1
+          rows_end = p01.index("\n\n**Belvedere Clusane", rows_start)
+          rows = p01[rows_start:rows_end].splitlines()
+          if len(rows) != 12:
+              raise SystemExit(f"Expected 12 price-table rows, found {len(rows)}")
+          rows.sort(key=camp_key)
+          p01 = p01[:rows_start] + "\n".join(rows) + p01[rows_end:]
+          write("content/01.qmd", p01)
+
+          # 3) Reorder quick recommendations and all campsite profiles.
+          files = [f"content/{i:02d}.qmd" for i in range(2, 7)]
+          combined = "\n".join(read(f).rstrip() for f in files) + "\n"
+
+          # Quick-recommendation table rows.
+          qh = "| Best for | Campsite | Why |"
+          qpos = combined.index(qh)
+          qrows_start = combined.index("\n| **", qpos) + 1
+          qrows_end = combined.index("\n\n# Campsite profiles", qrows_start)
+          qrows = combined[qrows_start:qrows_end].splitlines()
+          if len(qrows) != 13:
+              raise SystemExit(f"Expected 13 quick-recommendation rows, found {len(qrows)}")
+          qrows.sort(key=camp_key)
+          combined = combined[:qrows_start] + "\n".join(qrows) + combined[qrows_end:]
+
+          profiles_h = combined.index("# Campsite profiles")
+          first_profile = re.search(r"(?m)^## \d+\. ", combined[profiles_h:])
+          if not first_profile:
+              raise SystemExit("No campsite profile headings found")
+          first_profile = profiles_h + first_profile.start()
+          tail_marker = "\n---\n\n# SUP planning on Lake Iseo"
+          tail_start = combined.index(tail_marker, first_profile)
+          profile_header = combined[profiles_h:first_profile]
+          profile_header = profile_header.replace(
+              "The profile order below is geographic/reference-oriented rather than the recommendation ranking above.",
+              "The profile order below follows the same campsite order used throughout this guide.",
+          )
+          profile_text = combined[first_profile:tail_start].strip()
+          blocks = re.split(r"\n\n---\n\n(?=## \d+\. )", profile_text)
+          if len(blocks) != 13:
+              raise SystemExit(f"Expected 13 campsite profile blocks, found {len(blocks)}")
+          blocks.sort(key=camp_key)
+          blocks = [re.sub(r"^## \d+\.", f"## {i}.", b, count=1) for i, b in enumerate(blocks, 1)]
+
+          prefix = combined[:profiles_h]
+          tail = combined[tail_start + len("\n---\n\n"):]
+
+          # Replace the SUP reliability matrix with one row per campsite in the same canonical order.
+          matrix_header = "| Base / campsite | SUP access | Publicly known fleet | Advance booking evidence | Reliability for this trip |"
+          mh = tail.index(matrix_header)
+          mrows_start = tail.index("\n| **", mh) + 1
+          mrows_end = tail.index("\n\n### Published rental prices worth knowing", mrows_start)
+          matrix_rows = [
+              "| **Camping Pilzone → Lagovivo** | Dedicated rental at Via Cave 1 | Official count not published; Aug 2026 reviewer rented **4 touring SUPs at once** and reported good quantity/range | **Phone reservations appreciated** | **Very good** |",
+              "| **Camping Cave → Lagovivo** | Dedicated rental at Via Cave 1, a short walk away | Official count not published; Aug 2026 reviewer rented **4 touring SUPs at once** and reported good quantity/range | **Phone reservations appreciated** | **Very good** |",
+              "| **Riva di San Pietro → Surface SUP Academy** | A few doors away in Marone | Multiple board categories; count not published | Contact available; guided activities are reservation-based | **Very good** |",
+              "| **Camping Quai** | Directly on-site | Count not published | **Reserve at least 1 day ahead** at reception | **Very good** |",
+              "| **Camping Eurovil** | **On-site SUP rental** + Whassup elsewhere in Predore as a second rental channel | Campsite fleet count not published; Whassup fleet count also not published | Whassup offers online/advance booking; campsite rule not published | **Very good** because there are two independent rental options in Predore |",
+              "| **Camping del Sole Village** | Directly on-site | Count not published | Contact on-site rental ahead; no SUP-specific reservation rule published | **Good–very good** |",
+              "| **Camping Eden → Surface SUP Academy / X Beach + RentalKles** | Dedicated Surface base on Via Piangrande plus a second Pisogne SUP rental business at RentalKles | Surface has multiple board categories; RentalKles publishes SUP rental from €5/hour | Both operators publish contact/booking channels | **Excellent redundancy** for a northern base |",
+              "| **Camping Punta d’Oro** | Directly on-site | **2 SUPs** + 3 kayaks | No formal SUP reservation policy found; call ahead | **Convenient but fragile** |",
+              "| **Camping Covelo** | No verified on-site SUP | **Il Lido di Iseo** rents SUPs to non-lido guests by reservation; otherwise use Pilzone operators | Il Lido requires reservation/payment but no lido admission | **Moderate–good**, but involves leaving the campsite |",
+              "| **Camping Iseo** | No verified on-site SUP | **Il Lido di Iseo** is a genuine public rental fallback and explicitly accepts SUP renters who are not lido guests | Reservation required | **Good fallback**, though not on-site |",
+              "| **Sassabanek / Sporting Lido** | Directly within complex | Count not published | No clear reservation rule found | **Good**, and Lido open through 6 Sep |",
+              "| **Camping Olivella → Lagovivo** | Dedicated rental at Via Cave 1, a short walk away | Official count not published; Aug 2026 reviewer rented **4 touring SUPs at once** and reported good quantity/range | **Phone reservations appreciated** | **Very good**, with a separate camper-access caveat |",
+              "| **Belvedere Clusane** | No verified on-site SUP | Separate rental trip required; do not assume Whassup is walkable | — | **Low–moderate**, and transient pitch status must first be confirmed |",
+          ]
+          tail = tail[:mrows_start] + "\n".join(matrix_rows) + tail[mrows_end:]
+
+          # Redistribute the reordered profile blocks cleanly across the existing chapter files.
+          groups = [blocks[0:2], blocks[2:5], blocks[5:8], blocks[8:11], blocks[11:13]]
+          content02 = prefix + profile_header + "\n\n---\n\n".join(groups[0]) + "\n"
+          content03 = "\n\n---\n\n".join(groups[1]) + "\n"
+          content04 = "\n\n---\n\n".join(groups[2]) + "\n"
+          content05 = "\n\n---\n\n".join(groups[3]) + "\n"
+          content06 = "\n\n---\n\n".join(groups[4]) + "\n\n---\n\n" + tail
+          for path, text in zip(files, [content02, content03, content04, content05, content06]):
+              write(path, text)
+
+          # 4) Reorder the official-campsite quick-reference table in content/09.
+          p09 = read("content/09.qmd")
+          ref_header = "| Campsite | Official website | Best reason to consider it for this trip |"
+          rh = p09.index(ref_header)
+          rstart = p09.index("\n| **", rh) + 1
+          rend = p09.index("\n\n# Deliberate exclusions", rstart)
+          rrows = p09[rstart:rend].splitlines()
+          if len(rrows) != 13:
+              raise SystemExit(f"Expected 13 official-site rows, found {len(rrows)}")
+          rrows.sort(key=camp_key)
+          p09 = p09[:rstart] + "\n".join(rrows) + p09[rend:]
+          write("content/09.qmd", p09)
+
+          # 5) Reorder campsite source lists that explicitly enumerate campsites across 09/10.
+          combo = read("content/09.qmd").rstrip() + "\n" + read("content/10.qmd")
+
+          def stable_camp_sort_bullets(text, start_marker, end_marker):
+              s = text.index(start_marker) + len(start_marker)
+              e = text.index(end_marker, s)
+              body = text[s:e]
+              lines = body.splitlines()
+              campsite = []
+              other = []
+              for idx, line in enumerate(lines):
+                  if not line.startswith("- "):
+                      other.append((idx, line))
+                      continue
+                  try:
+                      k = camp_key(line[2:])
+                  except Exception:
+                      other.append((idx, line))
+                  else:
+                      campsite.append((k, line))
+              if not campsite:
+                  return text
+              campsite.sort(key=lambda x: x[0])
+              nonblank_other = [line for _, line in other if line.strip()]
+              new_lines = [line for _, line in campsite]
+              if nonblank_other:
+                  new_lines += nonblank_other
+              new_body = "\n" + "\n".join(new_lines) + "\n\n"
+              return text[:s] + new_body + text[e:]
+
+          combo = stable_camp_sort_bullets(combo, "## Official / primary", "## Community / traveller evidence")
+          combo = stable_camp_sort_bullets(combo, "### Price / booking-rule checks completed 26 August 2026", "\n**Prices and operating dates")
+
+          # Split 09/10 again at the unchanged Community heading boundary so both files remain manageable.
+          split_marker = "## Community / traveller evidence"
+          split_at = combo.index(split_marker)
+          write("content/09.qmd", combo[:split_at])
+          write("content/10.qmd", combo[split_at:])
+
+          # 6) Convert every bare external URL in the rendered guide source to a Markdown autolink.
+          # This makes Pandoc emit real link nodes, which Typst carries into clickable PDF annotations.
+          url_re = re.compile(r"https?://[^\s<>]+")
+
+          def autolink_urls(text):
+              out = []
+              pos = 0
+              for m in url_re.finditer(text):
+                  start, end = m.span()
+                  raw = m.group(0)
+                  if start > 0 and text[start - 1] == "<":
+                      continue
+                  if start >= 2 and text[start - 2:start] == "](":
+                      continue
+                  trail = ""
+                  while raw and raw[-1] in ".,;:":
+                      trail = raw[-1] + trail
+                      raw = raw[:-1]
+                      end -= 1
+                  out.append(text[pos:start])
+                  out.append(f"<{raw}>")
+                  out.append(trail)
+                  pos = m.end()
+              if not out:
+                  return text
+              out.append(text[pos:])
+              return "".join(out)
+
+          for path in sorted(Path("content").glob("*.qmd")):
+              write(path, autolink_urls(read(path)))
+          PY
+
+      - name: Commit revisions
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/*.qmd styles.scss _extensions/iseo-guide/typst-template.typ
+          git diff --cached --check
+          git commit -m "Standardize campsite order and PDF links"
+          git push origin HEAD:main
